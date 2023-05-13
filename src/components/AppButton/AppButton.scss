@@ -1,0 +1,18 @@
+.app-button {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 180%;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: var(--yellow);
+  color: var(--MainColor);
+  padding: {
+    top: 10px;
+    bottom: 10px;
+    left: 30px;
+    right: 30px;
+  }
+}

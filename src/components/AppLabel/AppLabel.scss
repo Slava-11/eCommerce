@@ -1,0 +1,16 @@
+.app-title-h4 {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 7.5%;
+  background-color: var(--SecondaryBgColor);
+  color: var(--SecondaryColor);
+  padding: {
+    top: 7px;
+    bottom: 7px;
+    left: 13px;
+    right: 13px;
+  }
+}

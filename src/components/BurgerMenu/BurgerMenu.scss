@@ -1,0 +1,69 @@
+@import "../../scss/mixins.scss";
+.burger-menu {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  position: relative;
+  z-index: 10;
+  @include for-desktop{
+    display: none;
+  }
+}
+
+.burger-menu .line {
+  background-color: #000;
+  height: 2px;
+  width: 20px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.burger-menu.open .line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.burger-menu.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.open .line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu {
+  background-color: #fff;
+  height: 100%;
+  left: -100%;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  transition: left 0.3s;
+  width: 100%;
+  z-index: 9;
+}
+
+.menu.open {
+  left: 0;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  margin-bottom: 20px;
+}
+
+.menu ul li a {
+  color: #000;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+  color: #c33;
+}

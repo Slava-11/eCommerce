@@ -1,0 +1,58 @@
+@import "../../scss/mixins.scss";
+
+.header {
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: {
+      top: 15px;
+      left: 9px;
+      right: 9px;
+    }
+    @include for-tablet {
+      padding: {
+        left: 37px;
+        right: 37px;
+      }
+    }
+    @include for-desktop {
+      padding: {
+        left: 65px;
+        right: 65px;
+      }
+    }
+    @include for-desktop-HD {
+      padding: {
+        left: 130px;
+        right: 130px;
+      }
+    }
+  }
+  &__navigation {
+    display: none;
+    @include for-desktop {
+      display: block;
+    }
+    &-button {
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 180%;
+      margin-right: 25px;
+      color: var(--white);
+      &:last-child {
+        margin-right: 0px;
+      }
+      @include for-desktop-HD {
+        margin-right: 53px;
+      }
+    }
+  }
+  &__buttons {
+    display: none;
+    @include for-desktop {
+      display: block;
+    }
+  }
+}
