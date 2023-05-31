@@ -1,0 +1,20 @@
+.app-title-h3 {
+  font-family: "Montserrat", sans-serif;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  &__unique {
+    font-family: "Montserrat", sans-serif;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 7.5%;
+    line-height: 180%;
+  }
+  &__another{
+    color: var(--MainColor);
+    font-weight: 600;
+    font-size: 18px;
+  }
+}

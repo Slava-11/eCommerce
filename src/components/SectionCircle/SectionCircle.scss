@@ -1,0 +1,17 @@
+.circle {
+  display: flex;
+  align-items: center;
+  &__container {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--SecondaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 26px;
+    &-unique {
+      margin-right: 14px;
+    }
+  }
+}

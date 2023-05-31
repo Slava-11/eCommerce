@@ -1,0 +1,15 @@
+.app-title-h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 130%;
+  color: var(--white);
+  max-width: 555px;
+  margin-top: 18px;
+  &__unique {
+    font-size: 62px;
+    line-height: 130%;
+    max-width: 550px;
+    margin-top: 10px;
+  }
+}

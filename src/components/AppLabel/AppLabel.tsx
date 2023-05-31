@@ -1,10 +1,13 @@
-import './AppLabel.scss'
+import "./AppLabel.scss";
 
-export const AppLabel = () => {
-  return (
-    <div>
-      <h4 className='app-title-h4'>100% SATISFIED GUARANTEE</h4>
-    </div>
-  )
+interface AppLabel {
+  text: string;
 }
 
+export const AppLabel: React.FC<AppLabel> = ({ text }) => {
+  return (
+    <div>
+      <h4 className="app-title-h4">{text}</h4>
+    </div>
+  );
+};

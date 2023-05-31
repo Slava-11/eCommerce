@@ -2,14 +2,18 @@ import React, { useState } from "react";
 import "./BurgerMenu.scss";
 import { AppButton } from "../AppButton/AppButton";
 
-export const BurgerMenu = () => {
+interface BurgerMenu {
+  classNameBurger?: string;
+}
+
+export const BurgerMenu : React.FC<BurgerMenu> = ({ classNameBurger }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <>
+    <section className={`burger ${classNameBurger}`}>
       <div
         className={`burger-menu ${isOpen ? "open" : ""}`}
         onClick={handleClick}
@@ -21,8 +25,8 @@ export const BurgerMenu = () => {
 
       <nav className={`menu ${isOpen ? "open" : ""}`}>
         <div className="buttons">
-          <AppButton text=""/>
-          <AppButton text=""/>
+          <AppButton text="" />
+          <AppButton text="" />
         </div>
         <ul>
           <li>
@@ -36,6 +40,6 @@ export const BurgerMenu = () => {
           </li>
         </ul>
       </nav>
-    </>
+    </section>
   );
 };

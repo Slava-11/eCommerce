@@ -1,0 +1,18 @@
+@import "../../scss/mixins.scss";
+
+.contact {
+  &-container {
+    max-width: 485px;
+    margin: {
+      top: 80px;
+      left: auto;
+      right: auto;
+    }
+    @include for-desktop {
+      margin-top: 130px;
+    }
+    @include for-desktop-HD {
+      margin-top: 170px;
+    }
+  }
+}

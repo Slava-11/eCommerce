@@ -1,4 +1,10 @@
 @import "../../scss/mixins.scss";
+.burger{
+  display: block;
+}
+.burger__unique{
+  display: none;
+}
 .burger-menu {
   cursor: pointer;
   display: flex;

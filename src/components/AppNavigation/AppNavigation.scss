@@ -1,0 +1,93 @@
+@import "../../scss/mixins.scss";
+
+.app__navigation {
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-container__unique{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+    @include for-desktop{
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &-nav {
+    display: none;
+    @include for-desktop {
+      display: block;
+    }
+    &-button {
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 180%;
+      margin-right: 25px;
+      color: var(--white);
+      transition: .3s;
+      &:last-child {
+        margin-right: 0px;
+      }
+      &:hover{
+        transition: .3s;
+        color: rgb(148, 145, 145);
+      }
+      @include for-desktop-HD {
+        margin-right: 53px;
+      }
+    }
+    &-button__unique{
+      margin: 0px;
+      font-size: 30px;
+      @include for-desktop{
+        font-size: 16px;
+      }
+    }
+  }
+  &-nav__unique{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @include for-desktop{
+      flex-direction: row;
+      column-gap: 25px;
+    }
+    @include for-desktop-HD{
+      column-gap: 53px;
+    }
+  }
+  &-buttons {
+    display: none;
+    @include for-desktop {
+      display: block;
+    }
+  }
+  &-buttons__unique{
+    display: none;
+  }
+  &-social {
+    display: none;
+  }
+  &-social__unique{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+    @include for-desktop{
+      flex-direction: row;
+      column-gap: 20px;
+    }
+    @include for-desktop-HD{
+      column-gap: 47px;
+    }
+  }
+}

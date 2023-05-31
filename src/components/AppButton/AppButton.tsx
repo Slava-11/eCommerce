@@ -1,15 +1,13 @@
 import './AppButton.scss';
 
 interface AppButtonProps {
+  classNameButton?: string;
+  classNameMargin?: string;
   text: string;
-  bgColor?: string;
-  borderColor?: string;
-  textColor?: string;
-  margin?: string;
 }
 
-export const AppButton: React.FC<AppButtonProps> = ({ text, bgColor, borderColor, textColor, margin }) => {
+export const AppButton: React.FC<AppButtonProps> = ({ text, classNameMargin, classNameButton }) => {
   return (
-    <button className='app-button' style={{ backgroundColor: bgColor, borderColor: borderColor, color:textColor, marginLeft:margin }}>{text}</button>
+    <button className={`app-button ${classNameMargin} ${classNameButton}`}>{text}</button>
   )
 }
