@@ -25,7 +25,7 @@ export const Header = () => {
         </nav>
         <div className="header__buttons">
           <AppButton text='Sign in' textColor='var(--yellow)' bgColor='transparent' borderColor='var(--yellow)'/>
-          <AppButton text='Try Free' margin='15px'/>
+          <AppButton text='Try Free' className='className'/>
         </div>
       </div>
     </div>
