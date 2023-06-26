@@ -1,0 +1,108 @@
+@import "../../../scss/mixins.scss";
+.product {
+  &-container {
+    margin: {
+      top: 70px;
+      bottom: 30px;
+    }
+    @include for-tablet {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      row-gap: 30px;
+      margin-top: 120px;
+    }
+    @include for-desktop {
+      margin-bottom: 170px;
+    }
+    @include for-desktop-HD {
+      flex-direction: row;
+      row-gap: none;
+      column-gap: 11px;
+      margin-top: 200px;
+    }
+  }
+  &__content {
+    max-width: 555px;
+    @include for-tablet {
+      max-width: none;
+      width: 555px;
+    }
+    @include for-desktop-HD {
+      order: 2;
+    }
+    &-text {
+      margin-top: 40px;
+      @include for-tablet {
+        margin-top: 60px;
+      }
+      @include for-desktop {
+        margin-top: 91px;
+      }
+    }
+  }
+  &__photo {
+    position: relative;
+    width: 340px;
+    height: 415px;
+    margin: 0px auto;
+    @include for-tablet {
+      margin: 0px;
+      max-width: none;
+      width: 630px;
+      height: 660px;
+    }
+    @include for-desktop-HD {
+      order: 1;
+    }
+    &-rectangle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      max-width: 544px;
+    }
+    &-armchair {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: {
+        top: 93px;
+        left: 7px;
+      }
+      width: 100%;
+    }
+    &-container {
+      @include for-tablet {
+        display: none;
+      }
+      @include for-desktop {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        left: 0;
+        background-color: var(--white);
+        border-radius: 10px;
+        width: 210px;
+        height: 241px;
+        margin: {
+          top: 508px;
+          left: -100px;
+        }
+      }
+    }
+    &-statistics {
+      @include for-desktop {
+        padding: {
+          top: 38px;
+          left: 36px;
+          right: 36px;
+          bottom: 28px;
+        }
+      }
+    }
+  }
+}

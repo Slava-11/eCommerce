@@ -1,0 +1,18 @@
+@import "../../../scss/mixins.scss";
+
+.footer{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    @include for-tablet{
+        margin-top: 60px;
+        padding-bottom: 50px;
+    }
+    @include for-desktop{
+        margin-top: 120px;
+        padding-bottom: 65px;
+    }
+    @include for-desktop-HD{
+        margin-top: 185px;
+        padding-bottom: 85px;
+    }
+}
