@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./BurgerMenu.scss";
 import { AppNav } from "../../components/AppNav/AppNav";
 
-interface BurgerMenu {
+type BurgerMenuProps = {
   classNameBurger?: string;
 }
 
-export const BurgerMenu: React.FC<BurgerMenu> = ({ classNameBurger }) => {
+export const BurgerMenu = ({ classNameBurger } :BurgerMenuProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {

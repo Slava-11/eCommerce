@@ -1,4 +1,4 @@
-import { AppButton } from "../../Components/AppButton/AppButton";
+import { AppButton } from "../../components/AppButton/AppButton";
 import "./SectionInput.scss";
 import classNames from "classnames";
 

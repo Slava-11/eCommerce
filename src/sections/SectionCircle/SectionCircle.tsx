@@ -1,5 +1,5 @@
 import { AppTitleH3 } from "../../components/App-Typography/AppTitleH3/AppTitleH3";
-import React, { ReactNode } from "react";
+import  { ReactNode } from "react";
 import "./SectionCircle.scss";
 import classNames from "classnames";
 
