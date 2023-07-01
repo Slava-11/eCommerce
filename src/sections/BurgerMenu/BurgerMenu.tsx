@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./BurgerMenu.scss";
-import { AppButton } from "../../components/AppButton/AppButton";
 import { AppNav } from "../../components/AppNav/AppNav";
 
 interface BurgerMenu {
