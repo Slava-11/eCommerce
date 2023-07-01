@@ -19,7 +19,7 @@
 }
 
 .burger-menu .line {
-  background-color: #000;
+  background-color: #3A86FF;
   height: 2px;
   width: 20px;
   transition: transform 0.3s, opacity 0.3s;
@@ -38,7 +38,7 @@
 }
 
 .menu {
-  background-color: #fff;
+  background-color: rgb(93, 89, 89);
   height: 100%;
   left: -100%;
   overflow-y: auto;
@@ -47,29 +47,9 @@
   transition: left 0.3s;
   width: 100%;
   z-index: 9;
+  padding-top: 50px;
 }
 
 .menu.open {
   left: 0;
-}
-
-.menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu ul li {
-  margin-bottom: 20px;
-}
-
-.menu ul li a {
-  color: #000;
-  font-size: 18px;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.menu ul li a:hover {
-  color: #c33;
 }

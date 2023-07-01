@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./BurgerMenu.scss";
-import { AppButton } from "../../Components/AppButton/AppButton";
+import { AppButton } from "../../components/AppButton/AppButton";
+import { AppNav } from "../../components/AppNav/AppNav";
 
 interface BurgerMenu {
   classNameBurger?: string;
@@ -11,7 +12,9 @@ export const BurgerMenu: React.FC<BurgerMenu> = ({ classNameBurger }) => {
 
   const handleClick = () => {
     setIsOpen(!isOpen);
+    document.body.classList.toggle("scroll-lock");
   };
+
   return (
     <section className={`burger ${classNameBurger}`}>
       <div
@@ -24,21 +27,10 @@ export const BurgerMenu: React.FC<BurgerMenu> = ({ classNameBurger }) => {
       </div>
 
       <nav className={`menu ${isOpen ? "open" : ""}`}>
-        <div className="buttons">
-          <AppButton text="" />
-          <AppButton text="" />
-        </div>
-        <ul>
-          <li>
-            <a href="#">Главная</a>
-          </li>
-          <li>
-            <a href="#">О компании</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
+        <AppNav
+          classNameNav="app-nav__unique"
+          classNameLink="app-nav-link__unique"
+        />
       </nav>
     </section>
   );
