@@ -44,6 +44,13 @@ export const Process = () => {
               >
                 Satisfied Clients
               </AppTitleH3>
+              <div className="process__photo-avatars">
+                <img className="process__photo-avatar" src="src/img/avatar1.png" alt="no avatar" />
+                <img className="process__photo-avatar" src="src/img/avatar2.png" alt="no avatar" />
+                <img className="process__photo-avatar" src="src/img/avatar3.png" alt="no avatar" />
+                <img className="process__photo-avatar" src="src/img/avatar4.png" alt="no avatar" />
+                <img className="process__photo-avatar" src="src/img/avatar5.png" alt="no avatar" />
+              </div>
             </div>
           </section>
         </div>

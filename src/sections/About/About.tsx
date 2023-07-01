@@ -105,6 +105,11 @@ export const About = () => {
               </a>
             </div>
           </section>
+          <img className="about__ellipse" src="src/img/aboutEllipse.png" alt="no figure" />
+          <img className="about__half-ellipse" src="src/img/aboutHalfEllipse.png" alt="no figure" />
+          <img className="about__polygon" src="src/img/aboutPolygon.png" alt="no figure" />
+          <img className="about__rectangle" src="src/img/aboutRectangle.png" alt="no figure" />
+          <img className="about__small-rectangle" src="src/img/aboutSmallRectangle.png" alt="no figure" />
         </section>
       </AppContainer>
   );

@@ -14,7 +14,7 @@ import { Footer } from "./sections/Footer/Footer";
 
 function App() {
   return (
-    <>
+    <div className="cont">
       <Header/>
       <About />
       <Service />
@@ -23,7 +23,7 @@ function App() {
       <Process />
       <Contact />
       <Footer/>
-    </>
+    </div>
   );
 }
 

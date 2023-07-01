@@ -166,4 +166,49 @@
       }
     }
   }
+  &__ellipse {
+    display: none;
+    @include for-desktop-HD {
+      display: block;
+      position: absolute;
+      top: 700px;
+      right: 80px;
+    }
+  }
+  &__half-ellipse{
+    display: none;
+    @include for-desktop-HD {
+      display: block;
+      position: absolute;
+      top: 240px;
+      right: 0px;
+    }
+  }
+  &__polygon{
+    display: none;
+    @include for-desktop-HD {
+      display: block;
+      position: absolute;
+      top: 275px;
+      right: 811px;
+    }
+  }
+  &__rectangle{
+    display: none;
+    @include for-desktop-HD {
+      display: block;
+      position: absolute;
+      top: 347px;
+      right: 1379px;
+    }
+  }
+  &__small-rectangle{
+    display: none;
+    @include for-desktop-HD {
+      display: block;
+      position: absolute;
+      top: 951px;
+      right: 93px;
+    }
+  }
 }

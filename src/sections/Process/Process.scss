@@ -65,5 +65,19 @@
         }
       }
     }
+    &-avatars{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: {
+        top: 24px;
+        left: -30px;
+      }
+    }
+    &-avatar{
+      border-radius: 50%;
+      border-left: 5px solid var(--white);
+      margin-right: -15px;
+    }
   }
 }
