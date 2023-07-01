@@ -2,26 +2,27 @@ import "./App.scss";
 import "./scss/mixins.scss";
 import "./scss/var.scss";
 import "./scss/body.scss";
-import { Header } from "./components/Sections/Header/Header";
-import { About } from "./components/Sections/About/About";
-import { Service } from "./components/Sections/Service/Service";
-import { Activity } from "./components/Sections/Activity/Activity";
-import { Product } from "./components/Sections/Product/Product";
-import { Process } from "./components/Sections/Process/Process";
-import { Contact } from "./components/Sections/Contact/Contact";
-import { Footer } from "./components/Sections/Footer/Footer";
+
+import { About } from "./sections/About/About";
+import { Service } from "./sections/Service/Service";
+import { Activity } from "./sections/Activity/Activity";
+import { Product } from "./sections/Product/Product";
+import { Process } from "./sections/Process/Process";
+import { Contact } from "./sections/Contact/Contact";
+import { Header } from "./sections/Header/Header";
+import { Footer } from "./sections/Footer/Footer";
 
 function App() {
   return (
     <>
-      <Header />
+      <Header/>
       <About />
       <Service />
       <Activity />
       <Product />
       <Process />
       <Contact />
-      <Footer />
+      <Footer/>
     </>
   );
 }

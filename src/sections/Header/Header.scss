@@ -1,0 +1,24 @@
+@import "../../scss/mixins.scss";
+
+.header{
+    padding-top: 10px;
+    @include for-desktop{
+        padding-top: 20px;
+    }
+    @include for-desktop-HD{
+        padding-top: 30px;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__buttons{
+        display: none;
+        @include for-desktop{
+            display: flex;
+            column-gap: 15px;
+        }
+        @include for-desktop-HD{
+            column-gap: 28px;
+        }
+    }
+}

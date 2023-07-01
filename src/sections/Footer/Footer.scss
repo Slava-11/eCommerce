@@ -1,0 +1,51 @@
+@import "../../scss/mixins.scss";
+
+.footer{
+    padding: {
+        top: 20px;
+        bottom: 20px;
+    }
+    @include for-desktop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: {
+            top: 90px;
+            bottom: 45px;
+        }
+    }
+    @include for-desktop-HD{
+        padding: {
+            top: 190px;
+            bottom: 90px;
+        }
+    }
+    &__logo{
+        display: block;
+        margin: {
+            left: auto;
+            right: auto;
+            bottom: 30px;
+        }
+        @include for-desktop{
+            margin: 0px;
+        }
+    }
+    &__social{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+        margin-top: 35px;
+        @include for-desktop{
+            flex-direction: row;
+            row-gap: 0px;
+            column-gap: 20px;
+            margin-top: 0px;
+        }
+        @include for-desktop-HD{
+            column-gap: 40px;
+        }
+    }
+}

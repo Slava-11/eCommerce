@@ -1,0 +1,39 @@
+@import "../../scss/mixins.scss";
+
+.app-nav{
+    display: none;
+    @include for-desktop{
+        display: flex;
+        column-gap: 25px;
+    }
+    @include for-desktop-HD{
+        margin-left: 100px;
+        column-gap: 54px;
+    }
+    &__unique{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 25px;
+        @include for-desktop{
+            flex-direction: row;
+        }
+    }
+}
+.app-nav-link{
+    font-family: var(--fontFamily);
+    color: var(--white);
+    font-size: 16px;
+    transition: 0.3s;
+    &:hover{
+        transition: 0.3s;
+        color: var(--gray);
+    }
+    &__unique{
+        font-size: 25px;
+        @include for-desktop{
+            font-size: 16px;
+        }
+    }
+}
