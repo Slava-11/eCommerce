@@ -9,7 +9,7 @@ export const Header = () => {
   return (
     <AppContainer>
       <section className="header">
-        <img className="header__logo" src="./src/img/logo.png" alt="no logo" />
+        <img className="header__logo" src="src/img/logo.png" alt="no logo" />
         <AppNav/>
         <div className="header__buttons">
           <AppButton classNameButton='app-button__distinctive'>Sign in</AppButton>
