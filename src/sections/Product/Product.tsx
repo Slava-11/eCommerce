@@ -4,6 +4,9 @@ import { AppTitleH2 } from "../../components/App-Typography/AppTitleH2/AppTitleH
 import { AppTitleP } from "../../components/App-Typography/AppP/AppP";
 import { SectionCircle } from "../SectionCircle/SectionCircle";
 import "./Product.scss";
+import rectangleBlue from "../../img/rectangle-blue.png";
+import armchair from "../../img/armchair.png";
+import statistics from "../../img/statistics.png";
 
 export const Product = () => {
   return (
@@ -58,18 +61,18 @@ export const Product = () => {
           <section className="product__photo">
             <img
               className="product__photo-rectangle"
-              src="src/img/rectangle-blue.png"
+              src={rectangleBlue}
               alt="no rectangle"
             />
             <img
               className="product__photo-armchair"
-              src="src/img/armchair.png"
+              src={armchair}
               alt="no armchair"
             />
             <div className="product__photo-container">
               <img
                 className="product__photo-statistics"
-                src="src/img/statistics.png"
+                src={statistics}
                 alt="no statistics"
               />
             </div>

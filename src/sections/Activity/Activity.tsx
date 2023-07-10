@@ -5,6 +5,11 @@ import { AppTitleH2 } from "../../components/App-Typography/AppTitleH2/AppTitleH
 import { AppTitleP } from "../../components/App-Typography/AppP/AppP";
 import "./Activity.scss";
 
+import grow from "../../img/grow.svg";
+import priceList from "../../img/price-list.svg";
+import report from "../../img/report.svg";
+import сonversion from "../../img/сonversion.svg";
+
 export const Activity = () => {
   return (
     <section className="activity">
@@ -22,26 +27,26 @@ export const Activity = () => {
             <AppCard
               titleText="Grow your traffic"
               text="We always help your company to grow with us."
-              img="src/img/grow.svg"
+              img={grow}
               bgColor="#3E3125"
             />
             <AppCard
               titleText="Content for sales"
               text="Every company that we handel. We always content more sales."
-              img="src/img/price-list.svg"
+              img={priceList}
               bgColor="#172656"
               mainBgColor="#1A1A3D"
             />
             <AppCard
               titleText="Reporting & analytics"
               text="Lorem ipsum dolor sit amet, consectetur adipiscing"
-              img="src/img/report.svg"
+              img={report}
               bgColor="#3E0B39"
             />
             <AppCard
               titleText="Better Conversion"
               text="We always help your company to grow with us."
-              img="src/img/сonversion.svg"
+              img={сonversion}
               bgColor="#3D1C25"
             />
           </section>

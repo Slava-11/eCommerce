@@ -15,14 +15,14 @@ import { Footer } from "./sections/Footer/Footer";
 function App() {
   return (
     <div className="cont">
-      <Header/>
+      <Header />
       <About />
       <Service />
       <Activity />
       <Product />
       <Process />
       <Contact />
-      <Footer/>
+      <Footer />
     </div>
   );
 }

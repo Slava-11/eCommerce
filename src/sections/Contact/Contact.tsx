@@ -20,7 +20,9 @@ export const Contact = () => {
               classNameImg="app__input-unique"
               classNameInput="app__input-distinctive"
               buttonText="Get Started"
-            >Type your messages..</AppInput>
+            >
+              Type your messages..
+            </AppInput>
           </section>
         </div>
       </AppContainer>

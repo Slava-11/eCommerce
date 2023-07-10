@@ -1,5 +1,5 @@
-import classNames from "classnames";
-import './AppNav.scss'
+import c from "classnames";
+import "./AppNav.scss";
 
 type AppNavProps = {
   classNameNav?: string;
@@ -7,8 +7,8 @@ type AppNavProps = {
 };
 
 export const AppNav = ({ classNameNav, classNameLink }: AppNavProps) => {
-  const appNav = classNames("app-nav", classNameNav);
-  const appNavLink = classNames("app-nav-link", classNameLink);
+  const appNav = c("app-nav", classNameNav);
+  const appNavLink = c("app-nav-link", classNameLink);
   return (
     <nav className={appNav}>
       <a className={appNavLink} href="#">

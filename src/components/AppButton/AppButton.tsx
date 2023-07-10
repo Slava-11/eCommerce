@@ -1,5 +1,5 @@
 import "./AppButton.scss";
-import classNames from "classnames";
+import c from "classnames";
 
 type AppButtonProps = {
   classNameButton?: string;
@@ -12,10 +12,6 @@ export const AppButton = ({
   classNameMargin,
   classNameButton,
 }: AppButtonProps) => {
-  const combinedClassName = classNames(
-    "app-button",
-    classNameMargin,
-    classNameButton
-  );
+  const combinedClassName = c("app-button", classNameMargin, classNameButton);
   return <button className={combinedClassName}>{children}</button>;
 };

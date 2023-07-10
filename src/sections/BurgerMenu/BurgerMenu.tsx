@@ -4,9 +4,9 @@ import { AppNav } from "../../components/AppNav/AppNav";
 
 type BurgerMenuProps = {
   classNameBurger?: string;
-}
+};
 
-export const BurgerMenu = ({ classNameBurger } :BurgerMenuProps) => {
+export const BurgerMenu = ({ classNameBurger }: BurgerMenuProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {

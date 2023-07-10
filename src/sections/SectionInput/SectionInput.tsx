@@ -1,6 +1,7 @@
 import { AppButton } from "../../components/AppButton/AppButton";
 import "./SectionInput.scss";
-import classNames from "classnames";
+import c from "classnames";
+import letter from "../../img/letter.svg";
 
 type AppInputProps = {
   classNameImg?: string;
@@ -15,11 +16,11 @@ export const AppInput = ({
   children,
   buttonText,
 }: AppInputProps) => {
-  const inputClass = classNames("app__input", classNameInput);
-  const imgClass = classNames("app__input-img", classNameImg);
+  const inputClass = c("app__input", classNameInput);
+  const imgClass = c("app__input-img", classNameImg);
   return (
     <section className={inputClass}>
-      <img className={imgClass} src="/src/img/letter.svg" alt="no letter" />
+      <img className={imgClass} src={letter} alt="no letter" />
       <input
         className="app__input-row"
         type="text"

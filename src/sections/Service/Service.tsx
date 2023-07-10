@@ -4,6 +4,7 @@ import { AppTitleH2 } from "../../components/App-Typography/AppTitleH2/AppTitleH
 import { AppTitleH3 } from "../../components/App-Typography/AppTitleH3/AppTitleH3";
 import { AppTitleP } from "../../components/App-Typography/AppP/AppP";
 import "./Service.scss";
+import telephone from "../../img/telephone.png";
 
 export const Service = () => {
   return (
@@ -13,7 +14,7 @@ export const Service = () => {
           <section className="service__photo">
             <img
               className="service__photo-img"
-              src="src/img/telephone.png"
+              src={telephone}
               alt="no phone"
             />
           </section>
