@@ -8,6 +8,19 @@ import { AppTitleP } from "../../components/App-Typography/AppP/AppP";
 import { SectionCircle } from "../SectionCircle/SectionCircle";
 import "./About.scss";
 
+import human from '../../img/human.png';
+import mainRectangleBlue from '../../img/mainRectangle-blue.png';
+import mainRectangleYellow from '../../img/mainRectangle-yellow.png';
+import list from '../../img/list.png';
+import rectangleOrange from '../../img/rectangleOrange.png';
+import woman from '../../img/woman.png';
+
+import aboutEllipse from '../../img/aboutEllipse.png';
+import aboutHalfEllipse from '../../img/aboutHalfEllipse.png';
+import aboutPolygon from '../../img/aboutPolygon.png';
+import aboutRectangle from '../../img/aboutRectangle.png';
+import aboutSmallRectangle from '../../img/aboutSmallRectangle.png';
+
 export const About = () => {
   return (
       <AppContainer>
@@ -38,23 +51,23 @@ export const About = () => {
           <section className="about__photo">
             <img
               className="about__photo-human"
-              src="src/img/human.png"
+              src={human}
               alt="no human"
             />
             <img
               className="about__photo-rectangle-blue"
-              src="src/img/mainRectangle-blue.png"
+              src={mainRectangleBlue}
               alt="no rectangle"
             />
             <img
               className="about__photo-rectangle-yellow"
-              src="src/img/mainRectangle-yellow.png"
+              src={mainRectangleYellow}
               alt="no rectangle"
             />
             <div className="about__photo-progress">
               <img
                 className="about__photo-progress-img"
-                src="src/img/list.png"
+                src={list}
                 alt="no list"
               />
               <AppTitleH3 className="app-title-h3__another">
@@ -77,12 +90,12 @@ export const About = () => {
             <div className="about__photo-review">
               <img
                 className="about__photo-review-img"
-                src="src/img/rectangleOrange.png"
+                src={rectangleOrange}
                 alt="no rectangleOrange"
               />
               <img
                 className="about__photo-review-img"
-                src="src/img/woman.png"
+                src={woman}
                 alt="np woman"
               />
               <div className="about__photo-review-content">
@@ -105,11 +118,11 @@ export const About = () => {
               </a>
             </div>
           </section>
-          <img className="about__ellipse" src="src/img/aboutEllipse.png" alt="no figure" />
-          <img className="about__half-ellipse" src="src/img/aboutHalfEllipse.png" alt="no figure" />
-          <img className="about__polygon" src="src/img/aboutPolygon.png" alt="no figure" />
-          <img className="about__rectangle" src="src/img/aboutRectangle.png" alt="no figure" />
-          <img className="about__small-rectangle" src="src/img/aboutSmallRectangle.png" alt="no figure" />
+          <img className="about__ellipse" src={aboutEllipse} alt="no figure" />
+          <img className="about__half-ellipse" src={aboutHalfEllipse} alt="no figure" />
+          <img className="about__polygon" src={aboutPolygon} alt="no figure" />
+          <img className="about__rectangle" src={aboutRectangle} alt="no figure" />
+          <img className="about__small-rectangle" src={aboutSmallRectangle} alt="no figure" />
         </section>
       </AppContainer>
   );
